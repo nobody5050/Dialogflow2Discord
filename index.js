@@ -49,4 +49,4 @@ function remove(username, text){
     return text.replace("@" + username + " ", "");
 }
 
-client.login(config.Discord);
+client.login(process.env.token)
