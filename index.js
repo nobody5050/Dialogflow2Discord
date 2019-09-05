@@ -11,7 +11,7 @@ client.on('ready', function(){
 });
 
 client.on('message', function(message){
-        if((message.channel.type == 'dm') && client.user.id != message.author.id){
+        if(( || message.channel.type == 'dm') && client.user.id != message.author.id){
         var mess = remove(client.user.username, message.cleanContent);
         console.log(mess);
         const user = message.author.id;
